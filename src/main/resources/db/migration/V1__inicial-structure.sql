@@ -1,0 +1,6 @@
+CREATE TABLE foods (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    price INTEGER NOT NULL,
+    image VARCHAR(555)
+);

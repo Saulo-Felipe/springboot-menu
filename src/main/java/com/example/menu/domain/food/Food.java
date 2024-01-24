@@ -1,4 +1,4 @@
-package com.example.menu.modules.food;
+package com.example.menu.domain.food;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -19,4 +19,10 @@ public class Food {
     private String title;
     private String image;
     private Integer price;
+
+    public Food(FoodRequestDTO newFood) {
+        this.image = newFood.image();
+        this.title = newFood.title();
+        this.price = newFood.price();
+    }
 }

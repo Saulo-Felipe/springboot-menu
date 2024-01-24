@@ -1,4 +1,4 @@
-package com.example.menu.modules.food;
+package com.example.menu.domain.food;
 
 public record FoodResponseDTO(Long id, String image, String title, Integer price) {
     public FoodResponseDTO(Food food) {
